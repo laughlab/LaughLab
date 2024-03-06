@@ -1,7 +1,6 @@
 import 'tailwindcss/tailwind.css';
 
-//FC means functional component
-const BusinessPage: React.FC = () => {
+const CustomerPage: React.FC = () => {
   return (
     <div>
       <h1>About Page</h1>
@@ -10,4 +9,4 @@ const BusinessPage: React.FC = () => {
   );
 };
 
-export default BusinessPage;
+export default CustomerPage;
