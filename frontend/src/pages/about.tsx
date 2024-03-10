@@ -1,3 +1,5 @@
+import React from 'react'; // Add the import statement for React
+
 import 'tailwindcss/tailwind.css';
 
 const AboutPage: React.FC = () => {
