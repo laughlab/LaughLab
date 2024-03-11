@@ -23,7 +23,7 @@ const Products: React.FC = () => {
             <h4 className="font-semibold">$29.99</h4>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 mb-2 z-20">
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
           Add to cart
         </div>
       </div>
