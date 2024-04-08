@@ -24,7 +24,30 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Add to cart
+          Buy now ➡️
+        </div>
+      </div>
+      
+      <div className="relative group">
+        <Link className="absolute inset-0 z-10" to="#">
+          <span className="sr-only">View</span>
+        </Link>
+        <div className="grid gap-2.5 relative group">
+          <img
+            alt="Cozy Blanket"
+            className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
+            height={400}
+            src="https://placehold.co/600"
+            width={400}
+          />
+          <div className="grid gap-1.5 p-4">
+            <h3 className="font-semibold">Cozy Blanket</h3>
+            <p className="text-sm leading-none">Warm and Soft for Chilly Nights</p>
+            <h4 className="font-semibold">$29.99</h4>
+          </div>
+        </div>
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
+          Buy now ➡️
         </div>
       </div>
       <div className="relative group">
@@ -33,20 +56,20 @@ const Products: React.FC = () => {
         </Link>
         <div className="grid gap-2.5 relative group">
           <img
-            alt="Autumn Mug"
+            alt="Cozy Blanket"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
             src="https://placehold.co/600"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
-            <h3 className="font-semibold">Autumn Mug</h3>
-            <p className="text-sm leading-none">Enjoy Your Hot Beverages in Style</p>
-            <h4 className="font-semibold">$12.99</h4>
+            <h3 className="font-semibold">Cozy Blanket</h3>
+            <p className="text-sm leading-none">Warm and Soft for Chilly Nights</p>
+            <h4 className="font-semibold">$29.99</h4>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 mb-2 z-20">
-          Add to cart
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
+          Buy now ➡️
         </div>
       </div>
       <div className="relative group">
@@ -55,20 +78,20 @@ const Products: React.FC = () => {
         </Link>
         <div className="grid gap-2.5 relative group">
           <img
-            alt="Fall Fragrance Candle"
+            alt="Cozy Blanket"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
             src="https://placehold.co/600"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
-            <h3 className="font-semibold">Fall Fragrance Candle</h3>
-            <p className="text-sm leading-none">Fill Your Space with a Cozy Scent</p>
-            <h4 className="font-semibold">$16.99</h4>
+            <h3 className="font-semibold">Cozy Blanket</h3>
+            <p className="text-sm leading-none">Warm and Soft for Chilly Nights</p>
+            <h4 className="font-semibold">$29.99</h4>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 mb-2 z-20">
-          Add to cart
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
+          Buy now ➡️
         </div>
       </div>
       <div className="relative group">
@@ -77,20 +100,42 @@ const Products: React.FC = () => {
         </Link>
         <div className="grid gap-2.5 relative group">
           <img
-            alt="Autumn Leaves Wall Art"
+            alt="Cozy Blanket"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
             src="https://placehold.co/600"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
-            <h3 className="font-semibold">Autumn Leaves Wall Art</h3>
-            <p className="text-sm leading-none">Decorate Your Space with Nature's Beauty</p>
-            <h4 className="font-semibold">$39.99</h4>
+            <h3 className="font-semibold">Cozy Blanket</h3>
+            <p className="text-sm leading-none">Warm and Soft for Chilly Nights</p>
+            <h4 className="font-semibold">$29.99</h4>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 mb-2 z-20">
-          Add to cart
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
+          Buy now ➡️
+        </div>
+      </div>
+      <div className="relative group">
+        <Link className="absolute inset-0 z-10" to="#">
+          <span className="sr-only">View</span>
+        </Link>
+        <div className="grid gap-2.5 relative group">
+          <img
+            alt="Cozy Blanket"
+            className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
+            height={400}
+            src="https://placehold.co/600"
+            width={400}
+          />
+          <div className="grid gap-1.5 p-4">
+            <h3 className="font-semibold">Cozy Blanket</h3>
+            <p className="text-sm leading-none">Warm and Soft for Chilly Nights</p>
+            <h4 className="font-semibold">$29.99</h4>
+          </div>
+        </div>
+        <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
+          Buy now ➡️
         </div>
       </div>
     </div>

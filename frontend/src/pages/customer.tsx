@@ -16,10 +16,8 @@ const CustomerPage: React.FC = () => {
     <div onClick={handleClick}>
       {/* <Navbar/> */}
       <Splash />
-      <p>Welcome to the Main page!</p>
 
-      <h1 className='h1'>Products</h1>
-      onClick={handleClick}
+      <h1 className='h1 mb-4 mt-4 text-4xl font-extrabold text-gray-900'>Products</h1>
       {popupState && <Popup />}
 
       <Products />
