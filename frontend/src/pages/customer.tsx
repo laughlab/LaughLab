@@ -21,7 +21,7 @@ const CustomerPage: React.FC = () => {
       {popupState && <Popup />}
       <h1 className='h1 mb-4 mt-4 text-4xl font-extrabold text-gray-900'>Limited-Time Offer! [for showing the new drop(s)] [countdown timer here]</h1>
       {/* <div className="flex justify-center"></div> */}
-
+      
       <FeaturedProducts />
 
 

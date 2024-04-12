@@ -25,7 +25,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Buy now ➡️
+          Buy now! ➡️
         </div>
       </div>
       
@@ -48,7 +48,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Buy now ➡️
+          Buy now! ➡️
         </div>
       </div>
       <div className="relative group">
@@ -70,7 +70,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Buy now ➡️
+          Buy now! ➡️
         </div>
       </div>
       <div className="relative group">
@@ -92,7 +92,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Buy now ➡️
+          Buy now! ➡️
         </div>
       </div>
       <div className="relative group">
@@ -114,7 +114,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className="btn bg-blue-950 my-2 py-3 rounded z-20 text-white hover:">
-          Buy now ➡️
+          Buy now! ➡️
         </div>
       </div>
     </div>
