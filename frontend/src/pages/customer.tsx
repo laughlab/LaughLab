@@ -18,7 +18,7 @@ const CustomerPage: React.FC = () => {
       const timeoutId = setTimeout(() => {
         setPopupState(false);
         window.open('https://amazon.com', '_blank');
-      }, 3000); // 3000 milliseconds = 3 seconds
+      }, 1500); // 1500 milliseconds = 1.5 seconds
 
       return () => clearTimeout(timeoutId);
     }
