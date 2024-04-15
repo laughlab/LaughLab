@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 import Splash from '../components/splash.tsx';
@@ -13,20 +13,40 @@ import Footer from '../components/footer.tsx';
 const CustomerPage: React.FC = () => {
   const [popupState, setPopupState] = useState(false);
 
+  useEffect(() => {
+    if (popupState) {
+      const timeoutId = setTimeout(() => {
+        setPopupState(false);
+        window.open('https://amazon.com', '_blank');
+      }, 3000); // 3000 milliseconds = 3 seconds
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [popupState]);
+
+  function handleClick() {
+    setPopupState(true);
+  }
+
   return (
     //this is the main page for laughlab.org
-    <div onClick={handleClick}>
+    <div>
       {/* <Navbar/> */}
       <Splash />
-      {/* its absolute positioned so no matter where */}
+      {/* Pop is absolute positioned so no matter where */}
       {popupState && <Popup />}
-      <h1 className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 py-6'>Limited-Time Offer! [for showing the new drop(s)] [countdown timer here]</h1>
+      <h1 className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 py-6'>Limited-Time Offer! </h1>
+      {/* [for showing the new drop(s)] [countdown timer here] */}
       {/* <div className="flex justify-center"></div> */}
-
-      <FeaturedProducts />
+      <div onClick={handleClick} className='pb-5'>
+        <FeaturedProducts />
+      </div>
 
       <h1 className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 py-6'>Most Popular</h1>
-      <PopularProducts />
+      <div onClick={handleClick} className='pb-5'>
+        <PopularProducts />
+      </div>
+
 
 
       {/* Table */}
@@ -46,7 +66,7 @@ const CustomerPage: React.FC = () => {
             {/* Week 3 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">1/17 Wednesday</td>
-              <td className="border border-gray-800 px-1 py-2">2-1pm</td>
+              <td className="border border-gray-800 px-1 py-2">2-4pm</td>
               <td className="border border-gray-800 px-1 py-2">Austin</td>
             </tr>
             <tr>
@@ -58,12 +78,12 @@ const CustomerPage: React.FC = () => {
             {/* Week 1 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">1/25 Thursday</td>
-              <td className="border border-gray-800 px-1 py-2">2-1pm</td>
+              <td className="border border-gray-800 px-1 py-2">2-4pm</td>
               <td className="border border-gray-800 px-1 py-2">Austin</td>
             </tr>
             <tr>
               <td className="border border-gray-800 px-1 py-2">1/25 Thursday</td>
-              <td className="border border-gray-800 px-1 py-2">1-6pm</td>
+              <td className="border border-gray-800 px-1 py-2">4-6pm</td>
               <td className="border border-gray-800 px-1 py-2">SEC Plaza</td>
             </tr>
             <tr>
@@ -92,12 +112,12 @@ const CustomerPage: React.FC = () => {
             {/* Week 6 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">5/8 Wednesday</td>
-              <td className="border border-gray-800 px-1 py-2">2-1pm</td>
+              <td className="border border-gray-800 px-1 py-2">2-4pm</td>
               <td className="border border-gray-800 px-1 py-2">Austin</td>
             </tr>
             <tr>
               <td className="border border-gray-800 px-1 py-2">5/9 Thursday</td>
-              <td className="border border-gray-800 px-1 py-2">2-1pm</td>
+              <td className="border border-gray-800 px-1 py-2">2-4pm</td>
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
             <tr>
@@ -109,7 +129,7 @@ const CustomerPage: React.FC = () => {
             {/* Week 7 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">5/11 Tuesday</td>
-              <td className="border border-gray-800 px-1 py-2">1-6pm</td>
+              <td className="border border-gray-800 px-1 py-2">4-6pm</td>
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
             <tr>
@@ -121,7 +141,7 @@ const CustomerPage: React.FC = () => {
             {/* Week 8 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">5/20 Monday</td>
-              <td className="border border-gray-800 px-1 py-2">1-6pm</td>
+              <td className="border border-gray-800 px-1 py-2">4-6pm</td>
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
             <tr>
@@ -133,7 +153,7 @@ const CustomerPage: React.FC = () => {
             {/* Week 9 */}
             <tr>
               <td className="border border-gray-800 px-1 py-2">5/28 Tuesday</td>
-              <td className="border border-gray-800 px-1 py-2">1-6pm</td>
+              <td className="border border-gray-800 px-1 py-2">4-6pm</td>
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
 
@@ -149,7 +169,3 @@ const CustomerPage: React.FC = () => {
 };
 
 export default CustomerPage;
-
-function handleClick() {
-  setPopupState(true);
-}
