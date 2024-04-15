@@ -12,7 +12,7 @@ function App() {
   
 
   return (
-    <div className="overscroll-hidden select-none">
+    <div className="overscroll-hidden">
       <Navbar />
       <BrowserRouter>
         <Routes>
