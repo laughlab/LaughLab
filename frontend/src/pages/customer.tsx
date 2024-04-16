@@ -128,7 +128,7 @@ const CustomerPage: React.FC = () => {
 
             {/* Week 7 */}
             <tr>
-              <td className="border border-gray-800 px-1 py-2">5/11 Tuesday</td>
+              <td className="border border-gray-800 px-1 py-2">5/14 Tuesday</td>
               <td className="border border-gray-800 px-1 py-2">4-6pm</td>
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
@@ -145,7 +145,7 @@ const CustomerPage: React.FC = () => {
               <td className="border border-gray-800 px-1 py-2">Weatherford</td>
             </tr>
             <tr>
-              <td className="border border-gray-800 px-1 py-2">5/21 Friday</td>
+              <td className="border border-gray-800 px-1 py-2">5/24 Friday</td>
               <td className="border border-gray-800 px-1 py-2">12-2pm</td>
               <td className="border border-gray-800 px-1 py-2">Austin</td>
             </tr>
