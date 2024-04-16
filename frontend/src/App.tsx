@@ -1,7 +1,7 @@
 import './App.css';
 import './index.css';
 import 'tailwindcss/tailwind.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/navbar.jsx';
 import CustomerPage from './pages/customer.tsx';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="overscroll-hidden">
       <Navbar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={< CustomerPage/>}>
           </Route>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/about" element={< AboutPage/>}>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
