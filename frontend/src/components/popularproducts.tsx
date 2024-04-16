@@ -5,7 +5,7 @@ const Products: React.FC = () => {
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-start">
-      
+
       <div className="relative group">
         <Link className="absolute inset-0 z-10" to="#">
           <span className="sr-only">View</span>
@@ -28,7 +28,7 @@ const Products: React.FC = () => {
           Buy now! ➡️
         </div>
       </div>
-      
+
       <div className="relative group">
         <Link className="absolute inset-0 z-10" to="#">
           <span className="sr-only">View</span>
