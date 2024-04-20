@@ -20,7 +20,7 @@ const Products: React.FC = () => {
             alt="am i the problem?"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
-            src="src/assets/products/Am-I-the-problem-Solo.png"
+            src="https://i.imgur.com/XQdk2Q1.png"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
@@ -44,7 +44,7 @@ const Products: React.FC = () => {
             alt="Child of Divorce"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
-            src="src/assets/products/Child-of-Divorce-Solo.png"
+            src="https://i.imgur.com/RF0Mgzt.png"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
@@ -68,7 +68,7 @@ const Products: React.FC = () => {
             alt="Shield Potion"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
-            src="src/assets/products/Shield-potion-Solo.png"
+            src="https://i.imgur.com/zHQ3Dw1.png"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
@@ -92,7 +92,7 @@ const Products: React.FC = () => {
             alt="Technically Alcohol"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
-            src="src/assets/products/Technically-Alc-Solo.png"
+            src="https://i.imgur.com/FvEh3us.png"
             width={400}
           />
           <div className="grid gap-1.5 p-4">
@@ -116,7 +116,7 @@ const Products: React.FC = () => {
             alt="Wine Wednesday"
             className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
             height={400}
-            src="src/assets/products/Wine-Wednesday-Solo.png"
+            src="https://i.imgur.com/sGK6MSZ.png"
             width={400}
           />
           <div className="grid gap-1.5 p-4">

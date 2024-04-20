@@ -16,7 +16,7 @@ const FeaturedProducts: React.FC = () => {
               alt="Go Piss Girl"
               className="rounded-lg object-cover w-full aspect-square group-hover:opacity-50 transition-opacity"
               height={400}
-              src="src/assets/products/Go-Piss-girl-Solo.png"
+              src="https://i.imgur.com/qrF4FPA.png"
               width={400}
             />
             <div className="grid gap-1.5 p-4">
