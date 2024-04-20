@@ -3,7 +3,6 @@ import './index.css';
 import 'tailwindcss/tailwind.css';
 import { HashRouter, Routes, Route, } from 'react-router-dom';
 
-import Navbar from './components/navbar.jsx';
 import CustomerPage from './pages/customer.tsx';
 // import BusinessPage from './pages/business.tsx';
 // import AboutPage from './pages/about.tsx';
