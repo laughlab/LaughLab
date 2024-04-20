@@ -4,7 +4,7 @@ const Splash: React.FC = () => {
   return (
     <div>
       {/* Your component content goes here */}
-      <img className='rounded-lg object-cover w-full py-5' src="https://placehold.co/1600x400" alt="" />
+      <img className='rounded-lg object-cover w-full max-h-400 py-5' src="src/assets/Table-Banner.png" alt="" />
     </div>
   );
 };

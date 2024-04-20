@@ -2,23 +2,29 @@ import 'tailwindcss/tailwind.css';
 
 import { useState, useEffect } from 'react';
 
-
+import Navbar from '../components/navbar.jsx';
 import Splash from '../components/splash.tsx';
 import FeaturedProducts from '../components/featuredproducts.tsx';
 import PopularProducts from '../components/popularproducts.tsx';
 import Popup from '../components/popup.tsx';
 import Footer from '../components/footer.tsx';
 
-
 const CustomerPage: React.FC = () => {
   const [popupState, setPopupState] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     if (popupState) {
       const timeoutId = setTimeout(() => {
         setPopupState(false);
-        window.open('https://amazon.com', '_blank');
-      }, 1500); // 1500 milliseconds = 1.5 seconds
+        window.open('https://secure.touchnet.net/C20159_ustores/web/store_cat.jsp?STOREID=148&CATID=698', '_blank');
+      }, 2000); // 2000 milliseconds = 2 seconds
 
       return () => clearTimeout(timeoutId);
     }
@@ -31,11 +37,13 @@ const CustomerPage: React.FC = () => {
   return (
     //this is the main page for laughlab.org
     <div>
-      {/* <Navbar/> */}
+      <Navbar scrollToSection={scrollToSection} />
       <Splash />
       {/* Pop is absolute positioned so no matter where */}
       {popupState && <Popup />}
-      <h1 className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 py-6'>Limited-Time Offer! </h1>
+      <h1 id='product' className='h1 mb-1 mt-1 text-4xl font-extrabold text-gray-900 pt-6'> Featured Product!</h1>
+      <p className='pb-6'>Buy our products online for a quick pickup at our table!</p>
+      {/* Limited-Time Offer! */}
       {/* [for showing the new drop(s)] [countdown timer here] */}
       {/* <div className="flex justify-center"></div> */}
       <div onClick={handleClick} className='pb-5'>
@@ -50,7 +58,7 @@ const CustomerPage: React.FC = () => {
 
 
       {/* Table */}
-      <h1 className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 pt-6 pb-1'>Our Table Schedule</h1>
+      <h1 id='table' className='h1 mb-1 mt-1 text-4xl  font-extrabold text-gray-900 pt-6 pb-1'>Our Table Schedule</h1>
       <p className='pb-6'>You can find us in-person on the OSU campus at these times!</p>
 
       <div className="overflow-x-auto">
