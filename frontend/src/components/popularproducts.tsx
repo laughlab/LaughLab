@@ -25,7 +25,7 @@ const Products: React.FC = () => {
           />
           <div className="grid gap-1.5 p-4">
             <h3 className="font-semibold">am i the problem?</h3>
-            <p className="text-sm leading-none">am i the problem? is a 2 ounce bottle of hand sanitizer that is lightly scented with eucalyptus essential oils.</p>
+            <p className="text-sm leading-none">am i the problem? is a 2 ounce bottle of hand sanitizer that is lightly scented with grapefruit essential oils.</p>
             <h4 className="font-semibold">$4</h4>
           </div>
         </div>
@@ -121,7 +121,7 @@ const Products: React.FC = () => {
           />
           <div className="grid gap-1.5 p-4">
             <h3 className="font-semibold">Wine Wednesday</h3>
-            <p className="text-sm leading-none">Wine Wednesday is a 2 ounce bottle of hand sanitizer that is lightly scented with grapefruit essential oils.</p>
+            <p className="text-sm leading-none">Wine Wednesday is a 2 ounce bottle of hand sanitizer that is lightly scented with lavender essential oils.</p>
             <h4 className="font-semibold">$4</h4>
           </div>
         </div>
