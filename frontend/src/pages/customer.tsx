@@ -38,7 +38,11 @@ const CustomerPage: React.FC = () => {
     //this is the main page for laughlab.org
     <div>
       <Navbar scrollToSection={scrollToSection} />
+      <br />
+      <p className='m-5 p-5 text-2xl'>Thank you for supporting our company. As this is a student-run business, we have now closed. Keep an eye out for new businesses and products from the Oregon State University LaunchPad class next spring!</p>
+      <br />
       <Splash />
+      
       {/* Pop is absolute positioned so no matter where */}
       {popupState && <Popup />}
       <h1 id='product' className='h1 mb-1 mt-1 text-4xl font-extrabold text-gray-900 pt-6'> Featured Product!</h1>
